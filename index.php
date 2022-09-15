@@ -32,7 +32,7 @@
             if ( have_posts() ) :
                 while ( have_posts() ) :
                     the_post();
-                    the_title();
+                    the_title('<p>','</p>');
                     the_content();
 
                 endwhile;
