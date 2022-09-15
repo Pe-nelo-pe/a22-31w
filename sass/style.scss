@@ -1,0 +1,29 @@
+/*!
+Theme Name: A22-31W
+Theme URI: http://underscores.me/
+Author: Penelope
+Author URI: http://underscores.me/
+Description: Thème de base
+Version: 1.0.0
+Tested up to: 5.4
+Requires PHP: 5.6
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: underscore
+*/
+/*------------------------------------------------------------------------------*/
+
+// Importation des variables
+@import "variables/couleurs";
+@import "variables/polices";
+@import "variables/structure";
+
+
+// Importation de generic
+@import "generic/box-sizing";
+@import "generic/normalize";
+
+
+// Importation des éléments de base
+@import "base/body";
+@import "base/heading";
