@@ -1,3 +1,7 @@
 body{
-    background-color: darkcyan;
+    background-color: $couleur__background-body;
+}
+
+main{
+    font-family: $police__main;
 }
