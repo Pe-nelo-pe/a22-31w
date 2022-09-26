@@ -1,7 +1,14 @@
 body{
     background-color: $couleur__background-body;
+    margin: $margin__20px;
 }
 
 main{
     font-family: $police__main;
+    margin-top: $margin__50px;
+}
+
+p{
+    line-height: $line-height__texte;
+    margin-bottom: $margin__50px;
 }

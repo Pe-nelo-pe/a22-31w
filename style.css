@@ -338,10 +338,17 @@ template {
 
 body {
   background-color: rgb(245, 242, 216);
+  margin: 20px;
 }
 
 main {
   font-family: Arial, sans-serif;
+  margin-top: 50px;
+}
+
+p {
+  line-height: 1.35;
+  margin-bottom: 50px;
 }
 
 h1 a {
