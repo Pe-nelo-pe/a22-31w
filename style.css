@@ -91,6 +91,7 @@ pre {
  */
 a {
   background-color: transparent;
+  text-decoration: none;
 }
 
 /**
@@ -336,15 +337,16 @@ template {
 }
 
 body {
-  background-color: rgb(252, 246, 191);
+  background-color: rgb(245, 242, 216);
 }
 
 main {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
-h1 {
+h1 a {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(33, 105, 0);
 }
 
 h2, h3, h4, h5, h6 {
