@@ -21,6 +21,12 @@
 </head>
 
 <body <?php body_class(); ?>>
+
+<?php wp_nav_menu(array(
+			"menu" => "primaire",
+			"container" => "nav"
+		));?>
+
 <?php wp_body_open(); ?>
 <div id="page" class="site">
 	<header id="masthead" class="site-header">
@@ -36,5 +42,6 @@
 		<?php endif; ?>
 		</div><!-- .site-branding -->
 
+	
 
 	</header><!-- #masthead -->

@@ -5,9 +5,10 @@ h1 a{
 
 h2, h3, h4, h5, h6{
     font-family: $police__titre-secondaire;
-    text-decoration: underline $couleur__h1;
+    
 }
 
 h2{
     font-size: 1.25rem;
+    text-decoration: underline $couleur__h1;
 }

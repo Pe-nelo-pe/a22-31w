@@ -13,6 +13,10 @@ License URI: LICENSE
 Text Domain: 31w
 */
 /*------------------------------------------------------------------------------*/
+/* ----------Couleurs background*/
+/* ----------Couleurs titres*/
+/* ----------Couleurs texte*/
+/* ----------Couleurs liens*/
 /* Inherit box-sizing to more easily change it's value on a component level.
 @link http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
 *,
@@ -364,22 +368,29 @@ h1 a {
 
 h2, h3, h4, h5, h6 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  text-decoration: underline rgb(33, 105, 0);
 }
 
 h2 {
   font-size: 1.25rem;
+  text-decoration: underline rgb(33, 105, 0);
 }
 
-small, pre {
-  padding: 10px;
+small {
+  color: grey;
 }
 
 pre {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   background-color: rgb(167, 166, 160);
+  padding: 10px;
 }
 
-span {
-  margin: 20px;
+a:hover, a:focus, a:active {
+  color: limegreen;
+}
+a:focus {
+  outline: thin dotted;
+}
+a:hover, a:active {
+  outline: 0;
 }/*# sourceMappingURL=style.css.map */
