@@ -27,19 +27,11 @@
                     the_post();
                     the_title('<h2>','</h2>');?>
                     <h4>Par: <?php the_author()?></h4>
+                    <small>Publié <?php the_weekday(); ?>, le <?php the_date(); ?>, à <?php the_time(); ?></small>
                     <?php the_content(null, true); ?>
                     <section>
-                        <small> 
-                            <span><?php the_weekday(); ?></span>
-                            <span><?php the_date(); ?></span> 
-                            <span><?php the_time(); ?></span> 
-                            
-                        </small>
+                        <pre><?php the_category(); ?></pre>
                     </section>
-                    <pre>
-                        <?php the_category(); ?>
-                    </pre>
-                    
                     
                     
                 <?php
