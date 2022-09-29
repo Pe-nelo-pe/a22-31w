@@ -17,12 +17,26 @@ $couleur__small: grey;
 
 
 /* ----------Couleurs liens*/
-//$couleur__link: red;
-//$couleur__link--visited: blue;
+$couleur__link: rgb(33, 105, 0);
+$couleur__link--visited: rgb(33, 105, 0);
 $couleur__link--hover: limegreen;
 
 
 /* ----------Couleurs boutons*/
-$color__border--button: ;
-$color__border--button--hover: ;
-$color__border--button--focus: ; 
+$color__border--button: #999;
+$color__border--button--hover: #aaa;
+$color__border--button--focus: #888;
+
+$color__background--button: rgb(33, 105, 0);
+
+
+/* ----------Couleurs input*/
+$color__text-input:#444;
+
+$color__border-input: #999;
+
+$color__text-input-focus:#888;
+
+
+/* ----------Couleurs ligne horizontale*/
+$color__background-hr: rgb(154, 201, 154);

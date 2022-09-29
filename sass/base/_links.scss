@@ -1,9 +1,9 @@
 a {
-	//color: $couleur__link;
+	color: $couleur__link;
 
-	// &:visited {
-	// 	color: $couleur__link--visited;
-	// }
+	&:visited {
+		color: $couleur__link--visited;
+	}
 
 	&:hover,
 	&:focus,

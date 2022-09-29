@@ -18,6 +18,8 @@ Text Domain: 31w
 /* ----------Couleurs texte*/
 /* ----------Couleurs liens*/
 /* ----------Couleurs boutons*/
+/* ----------Couleurs input*/
+/* ----------Couleurs ligne horizontale*/
 /* Inherit box-sizing to more easily change it's value on a component level.
 @link http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
 *,
@@ -383,9 +385,14 @@ small {
 pre {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   background-color: rgb(167, 166, 160);
-  padding: 10px;
 }
 
+a {
+  color: rgb(33, 105, 0);
+}
+a:visited {
+  color: rgb(33, 105, 0);
+}
 a:hover, a:focus, a:active {
   color: limegreen;
 }
