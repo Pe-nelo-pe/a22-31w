@@ -30,11 +30,7 @@
                     <small>Publié <?php the_weekday(); ?>, le <?php the_date(); ?>, à <?php the_time(); ?></small>
                     <?php the_content(null, true); ?>
                     <section>
-                        <pre>
-                            <ul>
-                                <li><?php  the_category('<li>', '</li>'); ?></li>
-                            </ul>                    
-                        </pre>
+                        <pre><?php  the_category(); ?></pre>
                     </section>
                     
                     

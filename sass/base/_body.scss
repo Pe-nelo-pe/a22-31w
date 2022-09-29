@@ -1,11 +1,11 @@
 body{
     background-color: $couleur__background--body;
-    margin: $margin__20px;
+    margin: 0;
 }
 
-main{
+.site{
     font-family: $police__main;
-    margin-top: $margin__50px;
+    margin: $margin__50px;
 }
 
 p{

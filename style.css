@@ -346,12 +346,12 @@ template {
 
 body {
   background-color: rgb(245, 242, 216);
-  margin: 20px;
+  margin: 0;
 }
 
-main {
+.site {
   font-family: Arial, sans-serif;
-  margin-top: 50px;
+  margin: 50px;
 }
 
 p {
@@ -403,7 +403,7 @@ address {
 }
 
 pre {
-  background: rgb(155, 218, 153);
+  background: rgb(215, 216, 215);
   font-family: "Courier New", Courier, monospace;
   line-height: 0.8em;
   margin-bottom: 1.6em;
@@ -580,8 +580,22 @@ figure {
 }
 
 .menu-primaire-container {
-  display: flex;
+  margin: 0;
+  padding: 25px 0;
+  background-color: white;
 }
 .menu-primaire-container .menu {
   list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0;
+  padding: 0;
+}
+.menu-primaire-container a {
+  text-decoration: none;
+  padding: 5px 10px;
+  font-family: Arial, sans-serif;
+}
+.menu-primaire-container a:hover {
+  border-bottom: rgb(33, 105, 0) 1px solid;
 }/*# sourceMappingURL=style.css.map */

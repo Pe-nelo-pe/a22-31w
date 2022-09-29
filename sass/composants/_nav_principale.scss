@@ -1,11 +1,17 @@
 
 
 .menu-primaire-container{ // nav
-
-    display: flex;
+    margin: 0;
+    padding: 25px 0;
+    background-color: white;
+    
 
     .menu{ // ul
         list-style: none;
+        display: flex;
+        justify-content: space-evenly;
+        margin: 0;
+        padding: 0;
     }    
     
     .menu-item{ // li
@@ -14,9 +20,15 @@
     }
 
     a{
-
+        text-decoration: none;
+        padding: 5px 10px;
+        font-family: $police__main;
     }
 
+
+    a:hover{
+        border-bottom: $couleur__link 1px solid;
+    }
 
 }
 
