@@ -15,7 +15,7 @@
  */
 
 ?>
-<h1 class="trace">front-page.php</h1>
+
 <?php get_header(); ?>
 
 
