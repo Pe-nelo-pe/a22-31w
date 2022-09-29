@@ -3,7 +3,7 @@
 .menu-primaire-container{ // nav
     margin: 0;
     padding: 25px 0;
-    background-color: white;
+    background-color: $couleur__background--nav;
     
 
     .menu{ // ul
@@ -21,13 +21,17 @@
 
     a{
         text-decoration: none;
-        padding: 5px 10px;
         font-family: $police__main;
+        color: $couleur__nav;
+        padding: 25px;
+        font-weight: 600;
     }
 
 
     a:hover{
-        border-bottom: $couleur__link 1px solid;
+        text-decoration: underline $couleur__background--nav 1px solid;
+        background-color: $couleur__nav;
+        color:$couleur__background--nav
     }
 
 }

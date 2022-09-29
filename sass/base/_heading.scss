@@ -1,6 +1,7 @@
-h1 a{
+h1 {
     font-family: $police__titre-principal;
     color: $couleur__h1;
+    text-align: center;
 }
 
 h2, h3, h4, h5, h6{
@@ -10,5 +11,5 @@ h2, h3, h4, h5, h6{
 
 h2{
     font-size: 1.25rem;
-    text-decoration: underline $couleur__h1;
+    
 }
