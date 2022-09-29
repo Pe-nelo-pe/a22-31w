@@ -577,4 +577,11 @@ img {
 
 figure {
   margin: 1em 0;
+}
+
+.menu-primaire-container {
+  display: flex;
+}
+.menu-primaire-container .menu {
+  list-style: none;
 }/*# sourceMappingURL=style.css.map */
