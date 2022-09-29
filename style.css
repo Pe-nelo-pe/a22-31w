@@ -15,11 +15,12 @@ Text Domain: 31w
 /*------------------------------------------------------------------------------*/
 /* ----------Couleurs background*/
 /* ----------Couleurs titres*/
-/* ----------Couleurs texte*/
+/* ----------Couleurs simple*/
 /* ----------Couleurs liens*/
 /* ----------Couleurs boutons*/
 /* ----------Couleurs input*/
 /* ----------Couleurs ligne horizontale*/
+/* ----------Police simple*/
 /* Inherit box-sizing to more easily change it's value on a component level.
 @link http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
 *,
@@ -325,7 +326,6 @@ details {
  */
 summary {
   display: list-item;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 /* Misc
@@ -383,9 +383,56 @@ small {
   color: grey;
 }
 
+p {
+  margin-bottom: 1.5em;
+}
+
+dfn,
+cite,
+em,
+i {
+  font-style: italic;
+}
+
+blockquote {
+  margin: 0 1.5em;
+}
+
+address {
+  margin: 0 0 1.5em;
+}
+
 pre {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background-color: rgb(167, 166, 160);
+  background: rgb(155, 218, 153);
+  font-family: "Courier New", Courier, monospace;
+  line-height: 0.8em;
+  margin-bottom: 1.6em;
+  max-width: 100%;
+  overflow: auto;
+  padding: 1.6em;
+}
+
+code,
+kbd,
+tt,
+var {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+abbr,
+acronym {
+  border-bottom: 1px dotted grey;
+  cursor: help;
+}
+
+mark,
+ins {
+  background: lightgrey;
+  text-decoration: none;
+}
+
+big {
+  font-size: 125%;
 }
 
 a {
@@ -402,4 +449,132 @@ a:focus {
 }
 a:hover, a:active {
   outline: 0;
+}
+
+button,
+input[type=button],
+input[type=reset],
+input[type=submit] {
+  border: 1px solid;
+  border-color: #999;
+  border-radius: 3px;
+  background: rgb(33, 105, 0);
+  color: rgba(0, 0, 0, 0.8);
+  line-height: 1;
+  padding: 0.6em 1em 0.4em;
+}
+button:hover,
+input[type=button]:hover,
+input[type=reset]:hover,
+input[type=submit]:hover {
+  border-color: #aaa;
+}
+button:active, button:focus,
+input[type=button]:active,
+input[type=button]:focus,
+input[type=reset]:active,
+input[type=reset]:focus,
+input[type=submit]:active,
+input[type=submit]:focus {
+  border-color: #888;
+}
+
+input[type=text],
+input[type=email],
+input[type=url],
+input[type=password],
+input[type=search],
+input[type=number],
+input[type=tel],
+input[type=range],
+input[type=date],
+input[type=month],
+input[type=week],
+input[type=time],
+input[type=datetime],
+input[type=datetime-local],
+input[type=color],
+textarea {
+  color: #444;
+  border: 1px solid #999;
+  border-radius: 3px;
+  padding: 3px;
+}
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=url]:focus,
+input[type=password]:focus,
+input[type=search]:focus,
+input[type=number]:focus,
+input[type=tel]:focus,
+input[type=range]:focus,
+input[type=date]:focus,
+input[type=month]:focus,
+input[type=week]:focus,
+input[type=time]:focus,
+input[type=datetime]:focus,
+input[type=datetime-local]:focus,
+input[type=color]:focus,
+textarea:focus {
+  color: #888;
+}
+
+select {
+  border: 1px solid #999;
+}
+
+textarea {
+  width: 100%;
+}
+
+hr {
+  background-color: rgb(154, 201, 154);
+  border: 0;
+  height: 1px;
+  margin-bottom: 1.5em;
+}
+
+ul,
+ol {
+  margin: 0 0 1.5em 3em;
+}
+
+ul {
+  list-style: disc;
+}
+
+ol {
+  list-style: decimal;
+}
+
+li > ul,
+li > ol {
+  margin-bottom: 0;
+  margin-left: 1.5em;
+}
+
+dt {
+  font-weight: 700;
+}
+
+dd {
+  margin: 0 1.5em 1.5em;
+}
+
+/* Make sure embeds and iframes fit their containers. */
+embed,
+iframe,
+object {
+  max-width: 100%;
+}
+
+img {
+  display: block;
+  object-fit: cover;
+  height: auto;
+  max-width: 100%;
+}
+
+figure {
+  margin: 1em 0;
 }/*# sourceMappingURL=style.css.map */
