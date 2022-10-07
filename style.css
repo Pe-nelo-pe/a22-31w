@@ -453,6 +453,7 @@ a:hover, a:active {
 
 .menu__aside a {
   color: rgb(0, 0, 0);
+  font-weight: 500;
   text-decoration: none;
 }
 .menu__aside a:visited {
@@ -466,6 +467,7 @@ a:hover, a:active {
 }
 .menu__aside a:hover, .menu__aside a:active {
   outline: 0;
+  text-decoration: underline;
 }
 
 button,

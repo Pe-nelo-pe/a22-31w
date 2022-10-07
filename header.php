@@ -40,7 +40,7 @@
 			$underscore_description = get_bloginfo( 'description', 'display' );
 			if ( $underscore_description || is_customize_preview() ) :
 		?>
-			<p class="site__description"><?php echo $underscore_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
+			<h4 class="site__description"><?php echo $underscore_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></h4>
 		<?php endif; ?>
 		</div><!-- .site-branding -->
 
