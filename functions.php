@@ -76,7 +76,7 @@ add_action( 'after_setup_theme', 'mon_31w_register_nav_menu', 0 );
 function igc31w_filtre_choix_menu($obj_menu, $arg){
     //var_dump($obj_menu);
 	//die;
-	if($arg->menu == "aside")
+	if($arg->menu == "aside"){
 		foreach($obj_menu as $cle => $value)
 		{
 		// print_r($value);
@@ -85,6 +85,7 @@ function igc31w_filtre_choix_menu($obj_menu, $arg){
 		// echo $value->title . '<br>';
 	
 		}
+	}
     return $obj_menu;
 }
 add_filter("wp_nav_menu_objects","igc31w_filtre_choix_menu", 10,2);

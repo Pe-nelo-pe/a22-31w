@@ -5,12 +5,12 @@ body{
 
 .site{
     font-family: $police__main;
-    margin: $margin__50px;
+
 }
 
 p{
     line-height: $line-height__texte;
-    margin-bottom: $margin__50px;
+
     max-width: $max-width__texte;
 }
 
@@ -20,7 +20,3 @@ p{
     color: greenyellow;
 }
 
-.site__description{
-    text-align: center;
-
-}

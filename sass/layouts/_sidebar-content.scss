@@ -1,10 +1,12 @@
 .site {
 	display: grid;
-	grid-template-columns: ($size__site-sidebar) auto;
+	grid-template-columns:  auto;
 	grid-template-areas:
-		"header header"
-		"sidebar main"
-		"footer footer";
+		"sidebar"
+		"header"
+		"main"
+		"footer";
+	
 }
 
 .site__header {
@@ -14,14 +16,30 @@
 .site__main {
 	grid-area: main;
 	overflow: hidden; /* Resolves issue with <pre> elements forcing full width. */
+	margin:0 $margin__50px;
 }
 
 .widget__area {
 	grid-area: sidebar;
+	margin-left: $margin__50px;
+	border-right: 1px solid $couleur__background--nav;
 }
+
+
 
 .site__footer {
 	grid-area: footer;
 }
 
-@import "no-sidebar";
+
+@media screen and (min-width: 700px) {
+	.site {
+		display: grid;
+		grid-template-columns: ($size__site-sidebar) auto;
+		grid-template-areas:
+			"header header"
+			"sidebar main"
+			"footer footer";
+	}
+
+}

@@ -353,12 +353,10 @@ body {
 
 .site {
   font-family: Arial, sans-serif;
-  margin: 50px;
 }
 
 p {
   line-height: 1.5;
-  margin-bottom: 50px;
   max-width: 125ch;
 }
 
@@ -367,14 +365,9 @@ p {
   color: greenyellow;
 }
 
-.site__description {
-  text-align: center;
-}
-
 h1 {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   color: rgb(33, 105, 0);
-  text-align: center;
 }
 
 h2, h3, h4, h5, h6 {
@@ -615,6 +608,9 @@ figure {
   margin: 0;
   padding: 0;
 }
+.menu__principal .menu-item {
+  text-align: center;
+}
 .menu__principal a {
   text-decoration: none;
   font-family: Arial, sans-serif;
@@ -636,10 +632,14 @@ figure {
 .menu__aside .menu-item {
   padding: 10px 0;
 }
+.site__header > * {
+  text-align: center;
+}
+
 .site {
   display: grid;
-  grid-template-columns: 25% auto;
-  grid-template-areas: "header header" "sidebar main" "footer footer";
+  grid-template-columns: auto;
+  grid-template-areas: "sidebar" "header" "main" "footer";
 }
 
 .site__header {
@@ -649,18 +649,23 @@ figure {
 .site__main {
   grid-area: main;
   overflow: hidden; /* Resolves issue with <pre> elements forcing full width. */
+  margin: 0 50px;
 }
 
 .widget__area {
   grid-area: sidebar;
+  margin-left: 50px;
+  border-right: 1px solid rgb(33, 105, 0);
 }
 
 .site__footer {
   grid-area: footer;
 }
 
-.no-sidebar .site {
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-areas: "header" "main" "footer";
+@media screen and (min-width: 700px) {
+  .site {
+    display: grid;
+    grid-template-columns: 20% auto;
+    grid-template-areas: "header header" "sidebar main" "footer footer";
+  }
 }/*# sourceMappingURL=style.css.map */
