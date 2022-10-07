@@ -13,6 +13,7 @@ License URI: LICENSE
 Text Domain: 31w
 */
 /*------------------------------------------------------------------------------*/
+/* Couleurs de base du site*/
 /* ----------Couleurs background*/
 /* ----------Couleurs titres*/
 /* ----------Couleurs nav*/
@@ -636,6 +637,11 @@ figure {
 }
 .site__header > * {
   text-align: center;
+}
+
+.site__footer {
+  text-align: center;
+  margin: 50px;
 }
 
 .site {

@@ -11,8 +11,8 @@
 
 ?>
 
-	<footer>
-		<p> Mon pied de page! </p>
+	<footer class="site__footer">
+		<small> © Pénélope Ducharme, 2022 </small>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
