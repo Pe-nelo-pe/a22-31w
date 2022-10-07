@@ -641,7 +641,11 @@ figure {
 
 .site__footer {
   text-align: center;
-  margin: 50px;
+  padding: 50px;
+  background-color: rgb(33, 105, 0);
+}
+.site__footer small {
+  color: white;
 }
 
 .site {
@@ -670,7 +674,7 @@ figure {
   grid-area: footer;
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 1000px) {
   .site {
     display: grid;
     grid-template-columns: 20% auto;

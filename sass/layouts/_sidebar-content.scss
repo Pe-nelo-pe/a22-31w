@@ -33,7 +33,7 @@
 }
 
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 1000px) {
 	.site {
 		display: grid;
 		grid-template-columns: ($size__site-sidebar) auto;

@@ -1,5 +1,10 @@
 .site__footer{
     text-align: center;
-    margin: $margin__50px;
+    padding: $margin__50px;
+    background-color: $couleur__principale;
+
+    small{
+        color: $couleur__nav;
+    }
    
 }
