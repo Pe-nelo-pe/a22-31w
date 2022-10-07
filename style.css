@@ -18,6 +18,7 @@ Text Domain: 31w
 /* ----------Couleurs nav*/
 /* ----------Couleurs simple*/
 /* ----------Couleurs liens*/
+/* ----------Couleurs liens aside*/
 /* ----------Couleurs boutons*/
 /* ----------Couleurs input*/
 /* ----------Couleurs ligne horizontale*/
@@ -366,6 +367,10 @@ p {
   color: greenyellow;
 }
 
+.site__description {
+  text-align: center;
+}
+
 h1 {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   color: rgb(33, 105, 0);
@@ -450,6 +455,23 @@ a:focus {
   outline: thin dotted;
 }
 a:hover, a:active {
+  outline: 0;
+}
+
+.menu__aside a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+.menu__aside a:visited {
+  color: rgb(155, 152, 152);
+}
+.menu__aside a:hover, .menu__aside a:focus, .menu__aside a:active {
+  color: rgb(33, 105, 0);
+}
+.menu__aside a:focus {
+  outline: thin dotted;
+}
+.menu__aside a:hover, .menu__aside a:active {
   outline: 0;
 }
 
@@ -606,6 +628,14 @@ figure {
   color: rgb(33, 105, 0);
 }
 
+.menu__aside .menu {
+  list-style-type: none;
+  margin: 0 10px 0 0;
+  padding: 0;
+}
+.menu__aside .menu-item {
+  padding: 10px 0;
+}
 .site {
   display: grid;
   grid-template-columns: 25% auto;

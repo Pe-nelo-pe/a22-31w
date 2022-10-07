@@ -22,3 +22,29 @@ a {
 		outline: 0;
 	}
 }
+
+
+.menu__aside a {
+	color: $couleur__link__aside;
+
+	text-decoration: none;
+	
+	&:visited {
+		color: $couleur__link__aside--visited;
+	}
+
+	&:hover,
+	&:focus,
+	&:active {
+		color: $couleur__link__aside--hover;
+	}
+
+	&:focus {
+		outline: thin dotted;
+	}
+
+	&:hover,
+	&:active {
+		outline: 0;
+	}
+}
