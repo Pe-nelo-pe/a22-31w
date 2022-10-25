@@ -642,13 +642,50 @@ figure {
 .site__footer {
   display: flex;
   justify-content: space-around;
-  gap: 15px;
-  margin: 0 20px;
+  gap: 25px;
+  padding: 30px 50px;
+  background-color: rgb(33, 105, 0);
 }
 
 .site__footer div {
-  flex: 1;
-  border: 1px solid red;
+  flex-basis: 30%;
+}
+
+.sidebar h3 {
+  color: white;
+  border-bottom: 2px solid #fff;
+  padding-bottom: 2px;
+  max-width: fit-content;
+}
+
+.menu-utiles-container ul {
+  margin: 0;
+  padding: 0;
+}
+
+.site__footer .footer__links {
+  list-style-type: none;
+  padding: 10px 0;
+  margin: 0;
+}
+
+.site__footer .footer__links a {
+  color: white;
+}
+
+.site__footer .footer__links a:hover {
+  border-bottom: 2px solid #fff;
+  padding-bottom: 2px;
+  max-width: fit-content;
+}
+
+.spotify {
+  align-items: center;
+}
+
+.calendrier {
+  background-color: #fff;
+  padding: 15px;
 }
 
 .site {

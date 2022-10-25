@@ -12,11 +12,11 @@
 ?>
 
 	<footer class="site__footer">
-		<div>  <?php get_sidebar( 'primary' ); ?></div>
+		<div>  <?php get_sidebar( 'footer-1' ); ?></div>
 
-		<div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum maxime sapiente recusandae beatae soluta eum deleniti ullam, dolores alias excepturi commodi non consequatur perspiciatis laboriosam sit. Minima similique expedita sequi?</div>
-		<div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat recusandae, voluptatibus reiciendis doloribus quaerat inventore beatae, tempora ipsam vitae expedita, a ea sapiente dolorem quae minima et in quasi nulla?</div>
-		<div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat recusandae, voluptatibus reiciendis doloribus quaerat inventore beatae, tempora ipsam vitae expedita, a ea sapiente dolorem quae minima et in quasi nulla?</div>
+		
+		<div> <?php get_sidebar( 'footer-2' ); ?></div>
+		<div><?php get_sidebar( 'footer-3' ); ?></div>
 
 	</footer><!-- #colophon -->
 </div><!-- #page -->

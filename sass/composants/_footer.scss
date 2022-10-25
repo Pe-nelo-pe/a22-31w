@@ -1,24 +1,53 @@
 .site__footer{
     display: flex;
     justify-content: space-around;
-    gap: 15px;
-    margin: 0 20px;
+    gap: 25px;
+    padding: 30px 50px ;
+    background-color: $couleur__principale;
 }
 
 .site__footer div{
     //width: 20%;
-    flex: 1;
+    flex-basis: 30%;
     //height: 200px;
-    border: 1px solid red;
+   // border: 1px solid red;
 }
 
-// .site__footer{
-//     text-align: center;
-//     padding: $margin__50px;
-//     background-color: $couleur__principale;
+.sidebar h3{
+    color: $couleur__nav;
+    border-bottom:2px solid #fff;
+    padding-bottom:2px;
+    max-width: fit-content;
+}
+.menu-utiles-container ul{
+    margin: 0;
+    padding: 0;
+}
 
-//     small{
-//         color: $couleur__nav;
-//     }
+.site__footer .footer__links{
+    list-style-type: none; 
+    padding: 10px 0;
+    margin: 0;
+}
+
+.site__footer .footer__links a{
+    color: $couleur__nav;
    
-// }
+}
+
+.site__footer .footer__links a:hover{
+    border-bottom:2px solid #fff;
+    padding-bottom:2px;
+    max-width: fit-content;
+   
+}
+
+
+.spotify{
+    align-items: center;
+}
+
+.calendrier{
+    background-color: #fff;
+    padding: 15px;
+}
