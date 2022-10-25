@@ -640,12 +640,15 @@ figure {
 }
 
 .site__footer {
-  text-align: center;
-  padding: 50px;
-  background-color: rgb(33, 105, 0);
+  display: flex;
+  justify-content: space-around;
+  gap: 15px;
+  margin: 0 20px;
 }
-.site__footer small {
-  color: white;
+
+.site__footer div {
+  flex: 1;
+  border: 1px solid red;
 }
 
 .site {

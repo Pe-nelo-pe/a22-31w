@@ -1,0 +1,24 @@
+.site__footer{
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+    margin: 0 20px;
+}
+
+.site__footer div{
+    //width: 20%;
+    flex: 1;
+    //height: 200px;
+    border: 1px solid red;
+}
+
+// .site__footer{
+//     text-align: center;
+//     padding: $margin__50px;
+//     background-color: $couleur__principale;
+
+//     small{
+//         color: $couleur__nav;
+//     }
+   
+// }
