@@ -379,7 +379,7 @@ small {
 }
 
 p {
-  margin-bottom: 1.5em;
+  margin-bottom: 3em;
 }
 
 dfn,
@@ -616,7 +616,7 @@ figure {
   color: rgb(33, 105, 0);
 }
 
-.widget__area > * {
+.widget__area > * + * {
   margin-bottom: 50px;
 }
 
