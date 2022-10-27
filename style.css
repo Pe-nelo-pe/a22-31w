@@ -361,11 +361,6 @@ p {
   max-width: 125ch;
 }
 
-.trace {
-  background-color: black;
-  color: greenyellow;
-}
-
 h1 {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   color: rgb(33, 105, 0);
@@ -439,9 +434,6 @@ a {
   color: rgb(33, 105, 0);
   text-decoration: none;
 }
-a:visited {
-  color: rgb(33, 105, 0);
-}
 a:hover, a:focus, a:active {
   color: limegreen;
 }
@@ -456,9 +448,6 @@ a:hover, a:active {
   color: rgb(0, 0, 0);
   font-weight: 500;
   text-decoration: none;
-}
-.menu__aside a:visited {
-  color: rgb(155, 152, 152);
 }
 .menu__aside a:hover, .menu__aside a:focus, .menu__aside a:active {
   color: rgb(33, 105, 0);
@@ -635,6 +624,24 @@ figure {
 .menu__aside .menu-item {
   padding: 10px 0;
 }
+
+.calendrier {
+  margin: 50px 20px 50px 0;
+}
+
+.wp-calendar-table thead th {
+  background-color: green;
+  color: #fff;
+}
+
+.wp-calendar-table tbody {
+  background-color: #fff;
+}
+
+.aside-pinterest {
+  margin: 0 20px 0 0;
+}
+
 .site__header > * {
   text-align: center;
 }
@@ -651,7 +658,7 @@ figure {
   flex-basis: 30%;
 }
 
-.sidebar h3 {
+h3 {
   color: white;
   border-bottom: 2px solid #fff;
   padding-bottom: 2px;
@@ -683,11 +690,6 @@ figure {
   align-items: center;
 }
 
-.calendrier {
-  background-color: #fff;
-  padding: 15px;
-}
-
 .site {
   display: grid;
   grid-template-columns: auto;
@@ -706,7 +708,7 @@ figure {
 
 .widget__area {
   grid-area: sidebar;
-  margin-left: 50px;
+  margin-left: 30px;
   border-right: 1px solid rgb(33, 105, 0);
 }
 

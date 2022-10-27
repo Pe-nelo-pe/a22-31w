@@ -1,6 +1,5 @@
 .menu__aside{
 
-
     .menu{
         list-style-type: none;
         margin: 0 10px 0 0;
@@ -10,8 +9,22 @@
     .menu-item{
         padding: 10px 0;
     }
+}
 
-    a{
+.calendrier{
+    margin: 50px 20px 50px 0;
+}
 
-    }
+.wp-calendar-table thead th{
+    background-color: green;
+    color: #fff;
+}
+
+.wp-calendar-table tbody{
+    background-color:#fff;
+    
+}
+
+.aside-pinterest{
+    margin: 0 20px 0 0;
 }

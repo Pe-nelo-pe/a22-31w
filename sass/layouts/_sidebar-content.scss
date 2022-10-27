@@ -21,7 +21,7 @@
 
 .widget__area {
 	grid-area: sidebar;
-	margin-left: $margin__50px;
+	margin-left: $margin__30px;
 	border-right: 1px solid $couleur__principale;
 
 }
@@ -40,6 +40,7 @@
 		grid-template-areas:
 			"header header"
 			"sidebar main"
+		
 			"footer footer";
 	}
 
