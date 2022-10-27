@@ -1,3 +1,12 @@
+
+.widget__area>*{
+    margin-bottom: 50px;
+}
+
+.widget__area h2{
+    color:  $couleur__principale;
+}
+
 .menu__aside{
 
     .menu{
@@ -12,11 +21,11 @@
 }
 
 .calendrier{
-    margin: 50px 20px 50px 0;
+    margin-right: 20px;
 }
 
 .wp-calendar-table thead th{
-    background-color: green;
+    background-color:  $couleur__principale;
     color: #fff;
 }
 

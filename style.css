@@ -446,11 +446,11 @@ a:hover, a:active {
 
 .menu__aside a {
   color: rgb(0, 0, 0);
-  font-weight: 500;
   text-decoration: none;
 }
 .menu__aside a:hover, .menu__aside a:focus, .menu__aside a:active {
   color: rgb(33, 105, 0);
+  font-weight: 700;
 }
 .menu__aside a:focus {
   outline: thin dotted;
@@ -616,6 +616,14 @@ figure {
   color: rgb(33, 105, 0);
 }
 
+.widget__area > * {
+  margin-bottom: 50px;
+}
+
+.widget__area h2 {
+  color: rgb(33, 105, 0);
+}
+
 .menu__aside .menu {
   list-style-type: none;
   margin: 0 10px 0 0;
@@ -626,11 +634,11 @@ figure {
 }
 
 .calendrier {
-  margin: 50px 20px 50px 0;
+  margin-right: 20px;
 }
 
 .wp-calendar-table thead th {
-  background-color: green;
+  background-color: rgb(33, 105, 0);
   color: #fff;
 }
 
