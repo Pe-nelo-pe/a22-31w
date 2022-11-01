@@ -28,6 +28,8 @@
                     <h2><a href="<?php the_permalink()?>">
                     <?php the_title() ?></a></h2>
                     <h4>Durée du cours: <?php the_field('duree')?> heures</h4>
+                    <h4>Nom du professeur: <?php the_field('professeur')?> </h4>
+                    <h4>Période du cours: <?php the_field('periode')?> </h4>
                     <?php the_content(null, true);
                   
                 endwhile;
