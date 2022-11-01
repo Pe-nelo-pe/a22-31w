@@ -1,6 +1,6 @@
 ## a22-31w
 
-# Exercice #3 (5 points)
+### Exercice #3 (5 points)
 
 ## Par Pénélope Ducharme
 
