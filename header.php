@@ -40,15 +40,15 @@
 			$underscore_description = get_bloginfo( 'description', 'display' );
 			if ( $underscore_description || is_customize_preview() ) :
 		?>
-			<h4 class="site__description"><?php echo $underscore_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></h4>
+			<h4 class="site__description"><?php echo $underscore_description; ?></h4>
 		<?php endif; ?>
-		</div><!-- .site-branding -->
+		</div>
 
 	
 
 	</header><!-- #masthead -->
 
-	<aside class="widget__area">
+	<aside class="site__menu">
 		<h2>Tous les cours</h2>
 		<?php wp_nav_menu(array(
 			"menu" => "aside",
@@ -56,8 +56,10 @@
 			"container_class" => "menu__aside"
 		));
 		?>
-
+	</aside>
+	<aside class="site__sidebar">
 		<div><?php get_sidebar("aside-1");?></div>
 		<div><?php get_sidebar("aside-2");?></div>
-
 	</aside>
+
+	

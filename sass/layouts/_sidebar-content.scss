@@ -2,9 +2,10 @@
 	display: grid;
 	grid-template-columns:  auto;
 	grid-template-areas:
-		"sidebar"
+		"menu"
 		"header"
 		"main"
+		"sidebar"
 		"footer";
 	
 }
@@ -17,30 +18,41 @@
 	grid-area: main;
 	overflow: hidden; /* Resolves issue with <pre> elements forcing full width. */
 	margin:0 $margin__50px;
+	
 }
 
-.widget__area {
+.site__menu {
+	grid-area: menu;
+}
+
+.site__sidebar{
 	grid-area: sidebar;
-	margin-left: $margin__30px;
-	border-right: 1px solid $couleur__principale;
-
 }
-
-
 
 .site__footer {
 	grid-area: footer;
 }
 
+.site__menu, .site__sidebar{
+	margin-left: $margin__30px;
+	
+}
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 700px) {
 	.site {
 		display: grid;
 		grid-template-columns: ($size__site-sidebar) auto;
 		grid-template-areas:
 			"header header"
+			"menu main"
 			"sidebar main"
+			". main"
 			"footer footer";
+	}
+
+	.site__main{
+		padding: 0 50px;
+		border-left: 1px solid $couleur__principale;
 	}
 
 }

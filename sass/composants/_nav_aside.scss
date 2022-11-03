@@ -1,9 +1,9 @@
 
-.widget__area>*+*{
+.site__menu>*+*{
     margin-bottom: 50px;
 }
 
-.widget__area h2{
+.site__menu h2{
     color:  $couleur__principale;
 }
 
@@ -21,22 +21,25 @@
     }
 }
 
+.site__sidebar{
+    .calendrier{
+        margin-right: 20px;
+    }
 
-.calendrier{
-    margin-right: 20px;
+    .wp-calendar-table thead th{
+        background-color:  $couleur__principale;
+        color: #fff;
+    }
+
+    .wp-calendar-table tbody{
+        background-color:#fff;
+        
+    }
+
+
+    .aside-pinterest{
+        margin: 0 20px 0 0;
+    }
+
 }
 
-.wp-calendar-table thead th{
-    background-color:  $couleur__principale;
-    color: #fff;
-}
-
-.wp-calendar-table tbody{
-    background-color:#fff;
-    
-}
-
-
-.aside-pinterest{
-    margin: 0 20px 0 0;
-}

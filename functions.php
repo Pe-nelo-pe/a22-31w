@@ -71,7 +71,7 @@ add_action( 'after_setup_theme', 'mon_31w_register_nav_menu', 0 );
 
 
 
-/**-------------------------Filtre des éléments des menu */
+/**-------------------------Filtre des éléments du menu aside*/
 
 function igc31w_filtre_choix_menu($obj_menu, $arg){
     //var_dump($obj_menu);
