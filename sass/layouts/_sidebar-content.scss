@@ -33,10 +33,7 @@
 	grid-area: footer;
 }
 
-.site__menu, .site__sidebar{
-	margin-left: $margin__30px;
-	
-}
+
 
 @media screen and (min-width: 700px) {
 	.site {
@@ -48,6 +45,11 @@
 			"sidebar main"
 			". main"
 			"footer footer";
+	}
+
+	.site__menu, .site__sidebar{
+		margin-left: $margin__30px;
+		
 	}
 
 	.site__main{

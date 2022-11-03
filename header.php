@@ -49,7 +49,10 @@
 	</header><!-- #masthead -->
 
 	<aside class="site__menu">
-		<h2>Tous les cours</h2>
+		
+		<input type="checkbox" name="chk-burger" id="chk-burger" class="chk-burger">
+		<label for="chk-burger" class="burger">&#127828;</label>
+		<!-- <h2>Tous les cours</h2>  -->
 		<?php wp_nav_menu(array(
 			"menu" => "aside",
 			"container" => "nav",
@@ -57,6 +60,7 @@
 		));
 		?>
 	</aside>
+
 	<aside class="site__sidebar">
 		<div><?php get_sidebar("aside-1");?></div>
 		<div><?php get_sidebar("aside-2");?></div>
