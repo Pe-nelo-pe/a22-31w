@@ -29,7 +29,7 @@
     font-size: 2rem;
     width: 2rem;
     height: 2rem;
-    top: 10px;
+    top: 5px;
     right: 10px;
     transform: rotate(0);
     transition: transform 0.5s;
@@ -72,8 +72,10 @@
 }
 
 .site__sidebar{
-    .calendrier{
-        margin-right: 20px;
+    
+    
+    .sidebar{
+        margin-bottom: 25px;
     }
 
     .wp-calendar-table thead th{

@@ -71,7 +71,7 @@ add_action( 'after_setup_theme', 'mon_31w_register_nav_menu', 0 );
 
 
 
-/**-------------------------Filtre des éléments du menu aside*/
+/**-------------------------Filtre des éléments du menu	 aside*/
 
 function igc31w_filtre_choix_menu($obj_menu, $arg){
     //var_dump($obj_menu);
@@ -89,6 +89,8 @@ function igc31w_filtre_choix_menu($obj_menu, $arg){
 	
 		}
 	}
+
+	
     return $obj_menu;
 }
 add_filter("wp_nav_menu_objects","igc31w_filtre_choix_menu", 10,2);
@@ -159,3 +161,13 @@ function my_register_sidebars() {
 	/* Repeat register_sidebar() code for additional sidebars. */
 
 }
+
+
+// function wp_trim_words( $text, $num_words = 10, $more = null ) {
+
+// 	if($text == the_content() ){
+
+// 	}
+
+// } return apply_filters( 'wp_trim_words', $text, $num_words, $more, $original_text );
+

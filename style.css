@@ -645,7 +645,7 @@ figure {
   font-size: 2rem;
   width: 2rem;
   height: 2rem;
-  top: 10px;
+  top: 5px;
   right: 10px;
   transform: rotate(0);
   transition: transform 0.5s;
@@ -686,8 +686,8 @@ figure {
   padding: 10px 0;
 }
 
-.site__sidebar .calendrier {
-  margin-right: 20px;
+.site__sidebar .sidebar {
+  margin-bottom: 25px;
 }
 .site__sidebar .wp-calendar-table thead th {
   background-color: rgb(33, 105, 0);
@@ -770,6 +770,13 @@ h3 {
 
 .site__sidebar {
   grid-area: sidebar;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.site__sidebar h2 {
+  text-align: center;
 }
 
 .site__footer {
@@ -788,5 +795,11 @@ h3 {
   .site__main {
     padding: 0 50px;
     border-left: 1px solid rgb(33, 105, 0);
+  }
+  .site__sidebar {
+    align-items: unset;
+  }
+  .site__sidebar h2 {
+    text-align: left;
   }
 }/*# sourceMappingURL=style.css.map */

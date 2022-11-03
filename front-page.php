@@ -14,6 +14,8 @@
  * @package underscore
  */
 
+
+ //$value->title = wp_trim_words($value->title,3,"...");
 ?>
 
 <?php get_header(); ?>
@@ -28,8 +30,9 @@
                     <h2><a href="<?php the_permalink()?>">
                     <?php the_title() ?></a></h2>
                     
-                    <?php the_content(null, true);
+                    <p><?php echo wp_trim_words( get_the_excerpt(), 35, '...' ); ?></p>
                   
+               <?php
                 endwhile;
             endif;
         ?>
