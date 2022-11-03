@@ -545,7 +545,8 @@ hr {
 
 ul,
 ol {
-  margin: 0 0 1.5em 3em;
+  margin: 0;
+  padding: 0;
 }
 
 ul {
@@ -590,27 +591,35 @@ figure {
 
 .menu__principal {
   margin: 0;
-  padding: 25px 0;
+  padding: 25px;
   background-color: rgb(33, 105, 0);
+  text-align: center;
 }
 .menu__principal .menu {
   list-style: none;
-  display: flex;
-  justify-content: space-evenly;
-  margin: 0;
-  padding: 0;
+  display: block;
+}
+@media screen and (min-width: 700px) {
+  .menu__principal .menu {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+  }
+  .menu__principal a {
+    text-align: center;
+  }
 }
 .menu__principal .menu-item {
-  text-align: center;
+  padding: 15px;
 }
 .menu__principal a {
-  text-decoration: none;
   font-family: Arial, sans-serif;
   color: white;
-  padding: 25px;
   font-weight: 600;
+  height: 100;
 }
-.menu__principal a:hover {
+.menu__principal .menu-item:hover, .menu__principal .menu-item:hover a {
   text-decoration: underline rgb(33, 105, 0) 1px solid;
   background-color: white;
   color: rgb(33, 105, 0);
