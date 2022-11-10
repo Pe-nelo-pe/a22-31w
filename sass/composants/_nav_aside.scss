@@ -35,7 +35,7 @@
     transition: transform 0.5s;
     z-index: 10;
 
-    @media screen and (min-width: 700px){
+    @media screen and (min-width: 950px){
         display: none;
     }
 }
@@ -51,7 +51,7 @@
     text-align: center;
     background-color: $couleur__background--body;
 
-    @media screen and (min-width: 700px){
+    @media screen and (min-width: 950px){
         position: static;
         transform: translateX(0);
         width: fit-content;

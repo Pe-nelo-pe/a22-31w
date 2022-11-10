@@ -23,13 +23,18 @@
 
     <main class="site__main">
 
+    <nav class="menu__evenement">
+        <h2>Évènements à venir</h2>
         <?php
             wp_nav_menu(array(
                 "menu" => "evenement",
-                "container" => "nav",
-                "container_class" => "menu__evenement"
+                "container" => "",
+                "container_class" => ""
             ));
-    
+        ?>
+    </nav>
+        
+    <?php
             if ( have_posts() ) :
                 while ( have_posts() ) :
                     the_post();?>

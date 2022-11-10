@@ -1,17 +1,15 @@
 .site__footer{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     gap: 25px;
     padding: 30px 50px ;
     background-color: $couleur__principale;
 }
 
 .site__footer div{
-    //width: 20%;
-    flex-basis: 30%;
-    //height: 200px;
-   // border: 1px solid red;
+    min-width: 20%;
+
 }
 
 h3{
@@ -47,5 +45,6 @@ h3{
 
 .spotify{
     align-items: center;
+    min-width: 350px;
 }
 
