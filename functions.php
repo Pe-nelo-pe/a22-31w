@@ -71,7 +71,7 @@ add_action( 'after_setup_theme', 'mon_31w_register_nav_menu', 0 );
 
 
 
-/**-------------------------Filtre des éléments du menu	 aside*/
+/*-------------------------Filtre des éléments du menu	 aside*/
 
 function igc31w_filtre_choix_menu($obj_menu, $arg){
     //var_dump($obj_menu);
@@ -96,7 +96,26 @@ function igc31w_filtre_choix_menu($obj_menu, $arg){
 add_filter("wp_nav_menu_objects","igc31w_filtre_choix_menu", 10,2);
 
 
-/**-------------------------Widget du sidebar */
+/* ----------------------------------------------------------- Ajout de la description dans menu */
+/* Filtre du menu evenement
+* @arg string $item_output -- represente élément du menu
+* @arg object $item
+*/
+function prefix_nav_description( $item_output, $item) {
+    if ( !empty( $item->description ) ) {
+        $item_output = str_replace( '</a>',
+        '<hr><span class="menu-item-description">' . $item->description . '</span><div class="menu__item__icone"></div></a>',
+              $item_output );
+    }
+    return $item_output;
+}
+add_filter( 'walker_nav_menu_start_el', 'prefix_nav_description', 10, 2 );
+// l'argument 10 : niveau de privilège
+// l'argument 2 : le nombre d'argument dans la fonction de rappel: «prefix_nav_description»
+
+
+
+/*-------------------------Widget du sidebar */
 add_action( 'widgets_init', 'my_register_sidebars' );
 function my_register_sidebars() {
 	/* Register the 'footer-1' sidebar. */
@@ -157,17 +176,17 @@ function my_register_sidebars() {
 			'after_title'   => '</h3>',
 		)
 	);
-	
-	/* Repeat register_sidebar() code for additional sidebars. */
-
 }
 
 
-// function wp_trim_words( $text, $num_words = 10, $more = null ) {
+/**
+ * Fonction qui modifie la requete principale de WP "main query"
+ * Articles affichés sur page principale 
+ */
+function exclude_category($query) {
+	if ( $query->is_home() && $query->is_main_query() && ! is_admin()) {
+		$query->set('category_name', 'accueil');
+	}
 
-// 	if($text == the_content() ){
-
-// 	}
-
-// } return apply_filters( 'wp_trim_words', $text, $num_words, $more, $original_text );
+} add_action('pre_get_posts', 'exclude_category');
 

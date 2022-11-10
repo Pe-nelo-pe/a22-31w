@@ -10,7 +10,37 @@
 
         .menu-item{ //li
             width: 25%;
-        }
+
+            a{
+                text-decoration: none;
+            }
+           
+        } 
+        
     }
+
+    .evenement__porte{
+        background-color: aqua;
+
+
+    }
+    .evenement__projet{}
+    .evenement__stage{}
+
+    .menu__item__icone{
+        width: 50px;
+        height: 50px;
+        border: 1px solid #bbb;
+    }
+
+    .menu-item:hover{
+        background-color: rgba(0,0,0,0.2);
+    }
+}
+
+.evenement__title{
+    color: $couleur__h1;
+    text-decoration: 2px solid $couleur__h1 underline;
+    text-underline-offset: 5px;
 }
 

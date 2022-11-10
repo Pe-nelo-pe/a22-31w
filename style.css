@@ -718,13 +718,51 @@ figure {
 .menu__evenement .menu .menu-item {
   width: 25%;
 }
+.menu__evenement .menu .menu-item a {
+  text-decoration: none;
+}
+.menu__evenement .evenement__porte {
+  background-color: aqua;
+}
+.menu__evenement .menu__item__icone {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #bbb;
+}
+.menu__evenement .menu-item:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.evenement__title {
+  color: rgb(33, 105, 0);
+  text-decoration: 2px solid rgb(33, 105, 0) underline;
+  text-underline-offset: 5px;
+}
 
 .site__header > * {
   text-align: center;
+  border-bottom: 2px solid green;
+  margin: 25px;
+}
+
+.liste {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.liste__cours {
+  box-sizing: border-box;
+  flex: 0 1 calc(50% - 15px);
+  border: 1px solid green;
+  border-radius: 10px;
+  padding: 25px;
 }
 
 .site__footer {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   gap: 25px;
   padding: 30px 50px;

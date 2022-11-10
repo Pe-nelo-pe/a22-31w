@@ -21,21 +21,23 @@
 
     <main class="site__main">
 
+        <section class="liste">
         <?php
             if ( have_posts() ) :
                 while ( have_posts() ) :
                     the_post();?>
-                    <h2><a href="<?php the_permalink()?>">
-                    <?php the_title() ?></a></h2>
-                    <h4>Durée du cours: <?php the_field('duree')?> heures</h4>
-                    <h4>Nom du professeur: <?php the_field('professeur')?> </h4>
-                    <h4>Période du cours: <?php the_field('periode')?> </h4>
-                    <?php the_content(null, true);
+                    <article class="liste__cours">
+                        <h2><a href="<?php the_permalink()?>">
+                        <?php the_title() ?></a></h2>
+                        <h4>Durée du cours: <?php the_field('duree')?> heures</h4>
+                        <h4>Nom du professeur: <?php the_field('professeur')?> </h4>
+                        <h4>Période du cours: <?php the_field('periode')?> </h4>
+                        <p><?php echo wp_trim_words( get_the_excerpt(), 35, '...' ); ?></p>
+                    </article>
                   
-                endwhile;
-            endif;
-        ?>
-
+               <?php endwhile;
+            endif;?>
+        </section>
     </main>
 
 <?php get_footer(); ?>
