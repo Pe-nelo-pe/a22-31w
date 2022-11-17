@@ -25,3 +25,9 @@
         box-shadow: 1px 2px 15px rgba(0, 0, 0, 0.267);
     }
 }
+
+@media screen and (max-width: 650px) {
+    .liste{
+        flex-direction: column;
+    }
+}

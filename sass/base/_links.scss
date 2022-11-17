@@ -26,8 +26,10 @@ a {
 
 .menu__aside a {
 	color: $couleur__link__aside;
-	//font-weight: 500;
-	text-decoration: none;
+	text-decoration: underline;
+ 	text-decoration-color: transparent;
+	font-weight: 500;
+	transition: all 0.5s;
 	
 	// &:visited {
 	// 	color: $couleur__link__aside--visited;
@@ -47,6 +49,7 @@ a {
 	&:hover,
 	&:active {
 		outline: 0;
-		text-decoration: underline;
+		text-decoration-color: $couleur__principale;
+
 	}
 }

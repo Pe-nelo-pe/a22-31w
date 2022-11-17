@@ -446,7 +446,10 @@ a:hover, a:active {
 
 .menu__aside a {
   color: rgb(0, 0, 0);
-  text-decoration: none;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  font-weight: 500;
+  transition: all 0.5s;
 }
 .menu__aside a:hover, .menu__aside a:focus, .menu__aside a:active {
   color: rgb(33, 105, 0);
@@ -457,7 +460,7 @@ a:hover, a:active {
 }
 .menu__aside a:hover, .menu__aside a:active {
   outline: 0;
-  text-decoration: underline;
+  text-decoration-color: rgb(33, 105, 0);
 }
 
 button,
@@ -615,16 +618,20 @@ figure {
 }
 .menu__principal .menu-item {
   padding: 15px;
+  transition: all 0.5s;
 }
 .menu__principal a {
   font-family: Arial, sans-serif;
   color: white;
   font-weight: 600;
   height: 100;
+  transition: all 0.5s;
 }
-.menu__principal .menu-item:hover, .menu__principal .menu-item:hover a {
+.menu__principal .menu-item:hover {
   text-decoration: underline rgb(33, 105, 0) 1px solid;
   background-color: white;
+}
+.menu__principal .menu-item:hover a {
   color: rgb(33, 105, 0);
 }
 
@@ -831,6 +838,11 @@ figure {
   box-shadow: 1px 2px 15px rgba(0, 0, 0, 0.267);
 }
 
+@media screen and (max-width: 650px) {
+  .liste {
+    flex-direction: column;
+  }
+}
 .article_front {
   background-color: rgb(33, 105, 0);
   color: #fff;
