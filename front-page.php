@@ -34,20 +34,30 @@
         ?>
     </nav>
         
+    <section>
+        <h1>Articles en vedette</h1>
     <?php
+
             if ( have_posts() ) :
                 while ( have_posts() ) :
                     the_post();?>
-                    <h2><a href="<?php the_permalink()?>">
-                    <?php the_title() ?></a></h2>
-                    
-                    <p><?php echo wp_trim_words( get_the_excerpt(), 35, '...' ); ?></p>
-                  
+                    <article class="article_front">
+                        <a href="<?php the_permalink()?>">
+                        <h2><?php $title = the_title('','',FALSE); echo substr($title, 8, -6); ?></h2>
+                        <div class="resume">
+                            <?php if (has_post_thumbnail()){
+                                the_post_thumbnail("thumbnail");
+                            }; ?>
+                        
+                            <p><?php echo wp_trim_words( get_the_excerpt(), 35, '...' ); ?></p>
+                        </div>
+                        </a>
+                    </article>
                <?php
                 endwhile;
             endif;
         ?>
-
+    </section>
     </main>
 
 <?php get_footer(); ?>

@@ -23,7 +23,14 @@ function underscore_setup() {
 	 * provide it for us.
 	 */
 	add_theme_support( 'title-tag' );
-
+	
+	
+	add_theme_support( 'custom-logo', array(
+		'height' => 150,
+		'width' => 150,
+		) );
+		
+	add_theme_support( 'post-thumbnails' );
 
     /*
 	* Switch default core markup for search form, comment form, and comments
@@ -79,14 +86,10 @@ function igc31w_filtre_choix_menu($obj_menu, $arg){
 	if($arg->menu == "aside"){
 		foreach($obj_menu as $cle => $value)
 		{
-		// print_r($value);
-		//$value->title = substr($value->title,0,7);
 		$value->title = substr($value->title,7);
 		$value->title = wp_trim_words($value->title,3,"...");
 		$arrTitle = explode("(", $value->title);
 		$value->title = $arrTitle[0];
-		// echo $value->title . '<br>';
-	
 		}
 	}
 
@@ -200,24 +203,3 @@ function exclude_category($query) {
 
 
 
-// function igc31w_filtre_titre($title, $arg){
-//     //var_dump($obj_menu);
-// 	//die;
-// 	if($arg->class == "liste_cours"){
-// 		// foreach($title as $cle => $value)
-// 		// {
-// 		// print_r($value);
-// 		//$value->title = substr($value->title,0,7);
-// 		$title = substr($title,7);
-// 		$title = wp_trim_words($title,3,"...");
-// 		$arrTitle = explode("(", $title);
-// 		$title = $arrTitle[0];
-// 		// echo $value->title . '<br>';
-	
-// 		//}
-// 	}
-
-	
-//     return $title;
-// }
-// add_filter("the_title","igc31w_filtre_titre", 10,2);

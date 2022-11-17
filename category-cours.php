@@ -28,13 +28,13 @@
                     the_post();?>
                     <article class="liste__cours">
                         <h2><a href="<?php the_permalink()?>">
-                     
-                        <?php $title = the_title('','',FALSE); echo substr($title, 8, -6); ?></a></h2>
+                            <?php $title = the_title('','',FALSE); echo substr($title, 8, -6); ?>
+                        </a></h2>
 
                         <h4>Durée du cours: <?php the_field('duree')?> heures</h4>
                         <h4>Nom du professeur: <?php the_field('professeur')?> </h4>
                         <h4>Période du cours: <?php the_field('periode')?> </h4>
-                        <p><?php echo wp_trim_words( get_the_excerpt(), 35, '...' ); ?></p>
+                        <p><?= wp_trim_words( get_the_excerpt(), 35, '...' ); ?></p>
                     </article>
                   
                <?php endwhile;
