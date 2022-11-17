@@ -5,6 +5,9 @@
     padding: 25px ;
     background-color: $couleur__background--nav;
     text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     
 
     .menu{ // ul
@@ -13,7 +16,7 @@
         
     }    
 
-    @media screen and (min-width: 700px) {
+    @media screen and (min-width: 950px) {
         .menu{
             display: flex;
             justify-content: space-between;

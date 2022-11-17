@@ -5,6 +5,8 @@
     padding: 15px;
     border-radius: 10px;
     margin-bottom: 50px;
+  
+    
 
 
     .menu{ //ul
@@ -22,6 +24,7 @@
             background-color: #fff;
             display: flex;
             transition: all 0.5s;
+            position: relative;
 
             a{
                 display: flex;
@@ -55,17 +58,28 @@
 
     .evenement__porte{
         .menu__item__icone{
-            //background-image: "https://s2.svgbox.net/illlustrations.svg?ic=macintosh&color=000000" width="32" height="32";
+            background-image: url(https://s2.svgbox.net/illlustrations.svg?ic=macintosh&color=000000);
+            background-repeat: no-repeat;
+            // background-size: cover;          
+            height: 50px;
         }
     }
+
     .evenement__projet{
         .menu__item__icone{
-            
+            background-image: url(https://s2.svgbox.net/illlustrations.svg?ic=programing&color=000000);
+            background-repeat: no-repeat;
+            // background-size: cover
+            height: 50px;
         }
     }
+
     .evenement__stage{
         .menu__item__icone{
-            
+            background-image: url(https://s2.svgbox.net/illlustrations.svg?ic=it-girl&color=000000);
+            background-repeat: no-repeat;
+            // background-size: cover;
+            height: 50px;
         }
     }
 
@@ -73,7 +87,9 @@
         width: 30px;
         height: 30px;
         transition: all 0.5s;
+        position: absolute;
     
+        right: 25px;
     }
 
     .menu-item:hover{
@@ -97,3 +113,16 @@
     text-underline-offset: 5px;
 }
 
+
+@media screen and (max-width: 650px) {
+    .menu__evenement{
+
+        .menu{
+            flex-direction: column;
+
+            .menu-item{
+                display: inline;
+            }
+        }
+    }
+}

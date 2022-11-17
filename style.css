@@ -594,12 +594,15 @@ figure {
   padding: 25px;
   background-color: rgb(33, 105, 0);
   text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .menu__principal .menu {
   list-style: none;
   display: block;
 }
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 950px) {
   .menu__principal .menu {
     display: flex;
     justify-content: space-between;
@@ -730,6 +733,7 @@ figure {
   background-color: #fff;
   display: flex;
   transition: all 0.5s;
+  position: relative;
 }
 .menu__evenement .menu .menu-item a {
   display: flex;
@@ -750,10 +754,27 @@ figure {
   text-decoration: 0px;
   min-height: 50px;
 }
+.menu__evenement .evenement__porte .menu__item__icone {
+  background-image: url(https://s2.svgbox.net/illlustrations.svg?ic=macintosh&color=000000);
+  background-repeat: no-repeat;
+  height: 50px;
+}
+.menu__evenement .evenement__projet .menu__item__icone {
+  background-image: url(https://s2.svgbox.net/illlustrations.svg?ic=programing&color=000000);
+  background-repeat: no-repeat;
+  height: 50px;
+}
+.menu__evenement .evenement__stage .menu__item__icone {
+  background-image: url(https://s2.svgbox.net/illlustrations.svg?ic=it-girl&color=000000);
+  background-repeat: no-repeat;
+  height: 50px;
+}
 .menu__evenement .menu__item__icone svg {
   width: 30px;
   height: 30px;
   transition: all 0.5s;
+  position: absolute;
+  right: 25px;
 }
 .menu__evenement .menu-item:hover {
   background-color: rgba(255, 255, 255, 0.74);
@@ -773,6 +794,14 @@ figure {
   text-underline-offset: 5px;
 }
 
+@media screen and (max-width: 650px) {
+  .menu__evenement .menu {
+    flex-direction: column;
+  }
+  .menu__evenement .menu .menu-item {
+    display: inline;
+  }
+}
 .site__header > * {
   text-align: center;
   border-bottom: 2px solid green;
@@ -794,6 +823,13 @@ figure {
   border-radius: 10px;
   padding: 25px;
 }
+.liste__cours h4, .liste__cours p {
+  color: black;
+}
+
+.liste .liste__cours:hover {
+  box-shadow: 1px 2px 15px rgba(0, 0, 0, 0.267);
+}
 
 .article_front {
   background-color: rgb(33, 105, 0);
@@ -801,6 +837,13 @@ figure {
   padding: 15px;
   border-radius: 10px;
   margin-bottom: 50px;
+  transition: all 0.5s;
+}
+.article_front h2 {
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  text-underline-offset: 5px;
+  transition: 0.5s;
 }
 .article_front a {
   color: #fff;

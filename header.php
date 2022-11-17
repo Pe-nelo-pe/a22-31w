@@ -22,18 +22,22 @@
 
 <body <?php body_class(); ?>>
 
-<?php wp_nav_menu(array(
-			"menu" => "principal",
-			"container" => "nav",
-			"container_class" => "menu__principal"
-		));?>
+<nav class="menu__principal">
+	<?= get_custom_logo(); ?>
+	<img src="../../uploads/2022/11/village1.jpg" alt="" style="width: 75px; height: 75px;">
+	<?php wp_nav_menu(array(
+				"menu" => "principal",
+				"container" => "",
+				"container_class" => ""
+			));?>
+
+</nav>
 
 <?php wp_body_open(); ?>
 <div id="page" class="site">
 	<header id="masthead" class="site__header">
 		
 		<div class="site__branding">
-			<?= get_custom_logo(); ?>
 			<h1 class="site__title">
 				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
 			</h1>
