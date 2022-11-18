@@ -21,6 +21,8 @@
 
     <main class="site__main">
 
+    <article>
+
         <?php
             if ( have_posts() ) :
                 while ( have_posts() ) :
@@ -29,16 +31,13 @@
                     <h4>Par: <?php the_author()?></h4>
                     <small>Publié <?php the_weekday(); ?>, le <?php the_date(); ?>, à <?php the_time(); ?></small>
                     <?php the_content(null, true); ?>
-                    <section>
-                        <pre><?php  the_category(); ?></pre>
-                    </section>
                     
-                    
-                <?php
+                    <?php
                 endwhile;
             endif;
-        ?>
+            ?>
 
+    </article>
     </main>
 
 <?php get_footer(); ?>
