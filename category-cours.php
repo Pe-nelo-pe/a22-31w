@@ -21,6 +21,8 @@
 
     <main class="site__main">
 
+    <h1>Liste des cours offerts</h1>
+
         <section class="liste">
         <?php
             if ( have_posts() ) :

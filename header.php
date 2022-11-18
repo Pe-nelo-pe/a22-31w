@@ -29,7 +29,7 @@
 
 <nav class="menu__principal">
 	<?= get_custom_logo(); ?>
-	<img src="" alt="" style="height: 75px; width: 75px; border: 1px solid black;">
+	
 	<?php wp_nav_menu(array(
 				"menu" => "principal",
 				"container" => "",
