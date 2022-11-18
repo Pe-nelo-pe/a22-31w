@@ -16,15 +16,20 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
-
+	
 	<?php wp_head(); ?>
+	<style>
+		.site__header { background-color:<?= get_theme_mod("site__title__background"); ?>;}
+		.site__footer { background-color:<?= get_theme_mod("site__footer__background"); ?>;}
+	
+	</style>
 </head>
 
 <body <?php body_class(); ?>>
 
 <nav class="menu__principal">
 	<?= get_custom_logo(); ?>
-	<img src="../../uploads/2022/11/village1.jpg" alt="" style="width: 75px; height: 75px;">
+	<img src="" alt="" style="height: 75px; width: 75px; border: 1px solid black;">
 	<?php wp_nav_menu(array(
 				"menu" => "principal",
 				"container" => "",

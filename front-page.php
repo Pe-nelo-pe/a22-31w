@@ -43,13 +43,27 @@
                     the_post();?>
                     <article class="article_front">
                         <a href="<?php the_permalink()?>">
-                        <h2><?php $title = the_title('','',FALSE); echo substr($title, 8, -6); ?></h2>
+                        <h2><?php  $title = the_title('','',FALSE); echo substr($title, 8, -6); ?></h2>
                         <div class="resume">
                             <?php if (has_post_thumbnail()){
                                 the_post_thumbnail("thumbnail");
                             }; ?>
-                        
-                            <p><?php echo wp_trim_words( get_the_excerpt(), 35, '...' ); ?></p>
+                            <p>
+                            <?php 
+                            $myArray = get_the_category();
+                            $boolGalerie = false;
+                            foreach($myArray as $key){
+                                if($key->slug == "galerie"){
+                                    $boolGalerie = true;
+                                };
+                            }
+                            if($boolGalerie == true){
+                                the_content(); 
+
+                            } else {
+                                echo wp_trim_words( get_the_excerpt(), 35, '...' ); 
+                            } ?>
+                            </p>
                         </div>
                         </a>
                     </article>

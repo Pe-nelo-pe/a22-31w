@@ -598,7 +598,7 @@ figure {
   background-color: rgb(33, 105, 0);
   text-align: center;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 .menu__principal .menu {
@@ -606,6 +606,9 @@ figure {
   display: block;
 }
 @media screen and (min-width: 950px) {
+  .menu__principal .menu__principal {
+    justify-content: space-between;
+  }
   .menu__principal .menu {
     display: flex;
     justify-content: space-between;
@@ -620,7 +623,7 @@ figure {
   padding: 15px;
   transition: all 0.5s;
 }
-.menu__principal a {
+.menu__principal .menu-item a {
   font-family: Arial, sans-serif;
   color: white;
   font-weight: 600;
@@ -637,6 +640,7 @@ figure {
 
 .site__menu {
   position: relative;
+  z-index: 1;
 }
 
 .site__menu > * + * {
@@ -801,7 +805,7 @@ figure {
   text-underline-offset: 5px;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 750px) {
   .menu__evenement .menu {
     flex-direction: column;
   }
@@ -850,6 +854,7 @@ figure {
   border-radius: 10px;
   margin-bottom: 50px;
   transition: all 0.5s;
+  justify-content: space-around;
 }
 .article_front h2 {
   text-decoration: underline;
@@ -863,8 +868,12 @@ figure {
 .article_front .resume {
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
   gap: 25px;
   margin: 20px 0;
+}
+.article_front .resume .galerie {
+  margin: 0;
 }
 .article_front .resume p {
   margin: 0;

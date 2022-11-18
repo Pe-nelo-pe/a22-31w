@@ -1,5 +1,6 @@
 .site__menu{
     position: relative;
+    z-index: 1;
 }
 .site__menu>*+*{
     margin-bottom: 50px;
