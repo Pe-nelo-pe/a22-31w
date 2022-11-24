@@ -668,8 +668,8 @@ figure {
   font-size: 2rem;
   width: 2rem;
   height: 2rem;
-  top: 5px;
-  right: 10px;
+  top: 10px;
+  right: 20px;
   transform: rotate(0);
   transition: transform 0.5s;
   z-index: 10;
@@ -820,11 +820,55 @@ figure {
   }
 }
 .site__header > * {
-  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   border-bottom: 2px solid green;
   margin: 25px;
+  gap: 15px;
+  align-items: center;
+}
+.site__header > * .site__title-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+.site__header > * .site__title {
+  font-size: 100px;
+  margin: 0;
+}
+.site__header > * .site__description {
+  font-size: 20px;
+  max-width: 215px;
+}
+.site__header > * .logo__media {
+  margin: 15px 0;
 }
 
+.wp-block-search__inside-wrapper {
+  border: none;
+}
+
+@media screen and (max-width: 950px) {
+  .site__header > * {
+    margin-right: 50px;
+  }
+}
+@media screen and (max-width: 850px) {
+  .site__header > * {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 50px;
+  }
+  .site__header > * .site__description {
+    max-width: none;
+    margin: 0;
+  }
+  .site__header__widget {
+    margin-left: auto;
+  }
+}
 .liste {
   display: flex;
   justify-content: space-between;

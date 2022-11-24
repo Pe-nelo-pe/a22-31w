@@ -43,21 +43,23 @@
 	<header id="masthead" class="site__header">
 		
 		<div class="site__branding">
-			<h1 class="site__title">
-				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
-			</h1>
-		<?php	
+			<div class="site__title-info">
+
+				<h1 class="site__title">
+					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
+				</h1>
+				<?php	
 			$underscore_description = get_bloginfo( 'description', 'display' );
 			if ( $underscore_description || is_customize_preview() ) :
-		?>
-			<h4 class="site__description"><?php echo $underscore_description; ?></h4>
-		<?php endif; ?>
+				?>
+				<h4 class="site__description"><?php echo $underscore_description; ?></h4>
+			<?php endif; ?>
+			</div>
+			<div class="site__header__widget">
+				<?php get_sidebar( 'header-1' ); ?>
+				<?php get_sidebar( 'header-2' ); ?>
+			</div>
 		</div>
-
-		<div> <?php get_sidebar( 'header-1' ); ?>
-			<?php get_sidebar( 'header-2' ); ?>
-		</div>
-
 	</header><!-- #masthead -->
 
 	<aside class="site__menu">
