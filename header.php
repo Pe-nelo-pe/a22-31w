@@ -54,7 +54,9 @@
 		<?php endif; ?>
 		</div>
 
-	
+		<div> <?php get_sidebar( 'header-1' ); ?>
+			<?php get_sidebar( 'header-2' ); ?>
+		</div>
 
 	</header><!-- #masthead -->
 

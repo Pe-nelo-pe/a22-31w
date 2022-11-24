@@ -134,6 +134,31 @@ add_filter( 'walker_nav_menu_start_el', 'prefix_nav_description', 10, 2 );
 add_action( 'widgets_init', 'my_register_sidebars' );
 function my_register_sidebars() {
 	/* Register the 'footer-1' sidebar. */
+
+	register_sidebar(
+		array(
+			'id'            => 'header-1',
+			'name'          => __( 'Sidebar header-1' ),
+			'description'   => __( 'Premier sidebar du header-recherche' ),
+			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</div>',
+			'before_title'  => '<h3 class="widget-title">',
+			'after_title'   => '</h3>',
+		)
+	);
+
+	register_sidebar(
+		array(
+			'id'            => 'header-2',
+			'name'          => __( 'Sidebar header-2' ),
+			'description'   => __( 'Premier sidebar du header-logo medias' ),
+			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</div>',
+			'before_title'  => '<h3 class="widget-title">',
+			'after_title'   => '</h3>',
+		)
+	);
+
 	register_sidebar(
 		array(
 			'id'            => 'footer-1',
