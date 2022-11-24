@@ -7,28 +7,14 @@
 
 
 
-### Exercice #3 (5 points)
+### Épreuve finale (30 points)
 
 ###### L\'objectif de l'exercice #3:
 
-- Ajouter, gérer et utiliser des champs personnalisés
-- Adapter le menu aside pour qu'il soit adaptatif 
+- Ajouter, gérer et utiliser de deux widgets dans le header (bar de recherche et logo de médias sociaux)
+- Formatter les widgets dans le header
+- Création d'une page d'affichage des résultats de la recherche
 - Déployement du projet sur le serveur **_Siteground_**
-
-
-### Travail pratique 2 (25 points)
-
-###### L\'objectif du TP2:
-
-- Améliorer l'extension carrousel
-- Créer une page d'accueil interactive utiliser le modèle « front-page.php »
-- Dynamiser la structure de menu mobile actuel
-- Améliorer de la structure du sidebar
-- Améliorer l'apparence du footer
-- Créer un modèle category-cours pour synthétiser l'offre de cours
-- Créer quelques modèles et templates
-- Continuer à faire progresser le thème
-- Déployer le projet sur le serveur **_Siteground_**
 
 
 
